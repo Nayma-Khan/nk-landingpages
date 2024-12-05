@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+}
+ 
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: ; 
+    */
+border-bottom: 2px solid black;
+}
+
+#nav h3{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    padding-left:22px ;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* justify-content: ; 
+    
+    */
+cursor: pointer;
+    font-family: cursive;
+border-bottom: 2px solid black;
+color: black;
+}
+
+#nav h3:hover{
+    color: brown;
+    cursor: pointer;
+
+}
+
+
+#center{
+    height: calc(100% -100px);
+    width: 100%;
+    position: relative;
+    padding: 15px 20px;
+    /* text-shadow: 3px 3px 5px solid black;
+} */
+
+h1{
+    font-size: 90px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    white-space: nowrap;
+    font-weight: 900;
+    font-family: cursive;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    padding-bottom: 78%;
+    /* text-shadow: 1px 1px 5px  black; */
+}
+}
+h1::before{
+    content: "CODING STRUGGLES";
+    position: absolute;
+    /* background-color: aqua; */
+    left: -10px;
+    top: -10px;
+    z-index: -1;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+}
+
+/* #image{
+    position: absolute;
+    top: 60%;
+    height: 65%;
+    background-color:aqua;
+    background-image: url(download.png); */
+
+/* } */
+
+#image img{
+   position: absolute;
+   top: 65%;
+   height: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 67%;
+   border-radius: 50%;
+   padding: 20px;
+   border: 2px solid black;
+   margin-top: 1.5px;
+
+   /* background-image: url(download.png); */
+   /* background-repeat: no-repeat; */
+   background-size: cover;
+   object-fit: contain;
+   /* margin-top: 34px; */
+   box-shadow: 1px 1px 5px 7px inset;
+   
+
+}
+
+#btn2{
+    padding: 17px 36px;
+    font-size: 30px;
+    background-color: white;
+    position: absolute;
+    left: 11px;
+    top: 78%;
+    transform: rotate(13deg);
+    /* background-color: green; */
+    text-transform: uppercase;
+font-weight: 500; 
+border-radius: 50%;
+border-color: 3px solid black;
+box-shadow:  3px 2px 3px  3px  inset;
+
+}
+
+
+#btn1{
+    padding: 17px 36px;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    bottom:50%;
+    transform: rotate(13deg);
+    background-color: red;
+    text-transform: uppercase;
+font-weight: 500;
+    border-radius: 50%;
+    color: white;
+    Box-shadow:  -3px 12px 3px ;
+    /* border-radius: 50%; */
+}
+
+#socks {
+    height: 190px;
+    width: 210px;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 99;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    transform: rotate(12deg);
+    border: 2px solid black;
+    /* background-image: url(); */
+ background-image: url(Daniel-Radcliffe-Rupert-Grint-Emma-Watson-Harry.webp);
+ margin-left: 3%;
+ /* box-sizing: border-box; */
+ /* box-shadow: -2px 3px 5px solid white;
+ border: 2px 3px solid black; */
+}
+
+socks::after{
+     content: ""; 
+    height: 210px;
+    position: absolute;
+    width: 210px;
+    top:50px;
+    /* background-image: url(Daniel-Radcliffe-Rupert-Grint-Emma-Watson-Harry.webp); */
+    right: -18px;
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    background-image: url(Daniel-Radcliffe-Rupert-Grint-Emma-Watson-Harry.webp);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: black;
+    /* background-color: aliceblue; */
+}
+
+
+#socks1{
+    height: 190px;
+    width: 210px;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 99;
+    position: absolute;
+    bottom: 2%;
+    right: 15%;
+    transform: rotate(12deg);
+    border: 2px solid black;
+    background-image: url(HarryPotter5poster.webp);
+    /* background-size: contain; */
+    margin-top: 10%;
+    /* padding-left: 20%; */
+    /* background-color: aquamarine; */
+}
+
+#socks1::after{
+    content: " ";
+    height: 210px;
+    position: absolute;
+    width: 210px;
+    top: -20px;
+    background-image: url(HarryPotter5poster.webp);
+    right: -18px;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: black;
+    /* background-color: aliceblue; */
+}
