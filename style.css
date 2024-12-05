@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 221, 216);
+
+}
+
+#main img{
+    height: 550px;
+    width: 420px;
+    z-index: 99;
+    position: relative;
+    margin-left: 100px;
+    z-index: 99;
+    object-fit: cover;
+    margin-top: 9px;
+}
+
+#scroll-div{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+#scroll-div::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-div h1{
+    display: inline-block;
+    font-size: 143px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 4px;
+font-weight: 600px;
+ animation: scroll;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animation-direction: reverse; */
+
+
+}
+
+#scroll-div2{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 100;
+}
+#scroll-div2::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-div2 h1{
+    display: inline-block;
+    font-size: 143px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 4px;
+font-weight: 600px;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+color: transparent;
+animation-name: scroll;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animation-direction: reverse; */
+
+
+}
+
+#scroll-div3{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* background-color: palegoldenrod; */
+}
+
+#scroll-div3::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-div3 h1{
+    display: inline-block;
+    font-size: 140px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 4px;
+font-weight: 600px;
+animation-name: scroll;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: reverse;
+
+}
+
+#text{
+    position: absolute;
+    font-size: 40px;
+    width: 60%;
+    z-index: 999;
+    text-align: center;
+    top: 5%;
+    text-transform: uppercase;
+    font-weight: 1000px;
+
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+ }
+
+
+  @keyframes scroll {
+    0%{
+        /* transform: translateX(0); */
+        transform: translateX(calc(-100% + 32px));
+
+    }
+    100%{
+        /* transform: translateX(calc(100% + 32px)); */
+          transform: translateX(0); 
+
+    }
+    
+  }
